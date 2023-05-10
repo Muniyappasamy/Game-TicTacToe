@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 @ControllerAdvice
 public class GlobalExceptionHandler extends Exception {
-    @ExceptionHandler(InValidBookException.class)
-    public ResponseEntity<String> handleBadRequestException(InValidBookException ex) {
+    @ExceptionHandler(InvalidBookException.class)
+    public ResponseEntity<String> handleBadRequestException(InvalidBookException ex) {
 
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
     }

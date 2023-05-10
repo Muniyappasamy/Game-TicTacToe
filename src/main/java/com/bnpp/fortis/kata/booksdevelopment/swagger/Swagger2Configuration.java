@@ -38,13 +38,12 @@ public class Swagger2Configuration extends WebMvcConfigurerAdapter {
         return new ApiInfoBuilder().title("Book Development  REST APIs")
                 .description("REST APIs for Book Development list and Calculate best price for books")
                 .termsOfServiceUrl("http://localhost:8080")
-                .contact( new Contact("Muni","http://localhost:8080","muni@gmail.com")).license("License")
+                .contact(new Contact("Muni", "http://localhost:8080", "muni@gmail.com")).license("License")
                 .licenseUrl("http://localhost:8080").version("1.0").build();
     }
 
     @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry)
-    {
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
         registry.addResourceHandler("swagger-ui.html").addResourceLocations("classpath:/META-INF/resources/");
         registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");

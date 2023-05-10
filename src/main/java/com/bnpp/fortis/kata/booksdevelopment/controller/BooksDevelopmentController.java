@@ -4,15 +4,12 @@ import com.bnpp.fortis.kata.booksdevelopment.dto.Book;
 import com.bnpp.fortis.kata.booksdevelopment.dto.BookDto;
 import com.bnpp.fortis.kata.booksdevelopment.dto.CartSummaryReportDto;
 import com.bnpp.fortis.kata.booksdevelopment.service.BooksDevelopmentService;
-import com.bnpp.fortis.kata.booksdevelopment.service.BooksDevelopmentServiceImp;
 import com.bnpp.fortis.kata.booksdevelopment.service.PriceSummationService;
-import com.bnpp.fortis.kata.booksdevelopment.service.PriceSummationServiceImp;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
